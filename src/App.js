@@ -10,6 +10,12 @@ import { Home } from "./components/230913/Home";
 import { createGlobalStyle } from "styled-components";
 import { Gallery } from "./components/230914/Gallery";
 import { OpenWeather } from "./components/230914/OpenWeather";
+import { MyRef } from "./components/230915/MyRef";
+import { MyRouter } from "./components/230915/MyRouter";
+import { GameShop } from "./components/230918/Gameshop";
+import { UseContext } from "./components/230919/UseContext";
+import { Main } from "./components/project/Main";
+import { First } from "./components/project/First";
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -29,7 +35,13 @@ font-family: poppins,GmarketSansMedium;
 function App() {
   return (
     <>
-    <OpenWeather />
+    {/* <Main /> */}
+    {/* <First/> */}
+    {/* <NavBar/> */}
+    {/* <UseContext /> */}
+    <GameShop />
+    {/* <MyRef/> */}
+    {/* <OpenWeather cityName = "London"/> */}
     <GlobalStyle />
     {/* <Home /> */}
       {/* <PropsTest
