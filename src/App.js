@@ -36,10 +36,10 @@ function App() {
   return (
     <>
     {/* <Main /> */}
-    {/* <First/> */}
+    <First/>
     {/* <NavBar/> */}
     {/* <UseContext /> */}
-    <GameShop />
+    {/* <GameShop /> */}
     {/* <MyRef/> */}
     {/* <OpenWeather cityName = "London"/> */}
     <GlobalStyle />

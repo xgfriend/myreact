@@ -1,5 +1,15 @@
+import styled from "styled-components"
+
+const Container = styled.div``
+
+
 export function Fourth (){
     return<>
-    <h1>네 번째 화면</h1>
+    <Container>
+        <Characters>
+            <CharImg></CharImg>
+            <CharName></CharName>
+        </Characters>
+    </Container>
     </>
 }

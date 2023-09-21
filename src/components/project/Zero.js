@@ -21,7 +21,7 @@ width: 600px;
 export function Zero(){
     return<>
     <Container>
-        <Img src={logo}/>s
+        <Img src={logo}/>
     </Container>
     </>
 }

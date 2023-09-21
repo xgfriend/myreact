@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import map from "./img/lolmap.jpg"
+
 
 const Container = styled.div`
 width:100vw;
@@ -8,10 +10,10 @@ display:flex;
 justify-content: center;
 align-items:center;
 `
-const Img = styled.image`
-width:800px;
+const Img = styled.img`
+width:1000px;
 height:600px;
-background-color:gray;
+/* background-color:gray; */
 `
 //Img에는 협곡 지도
 //지도 위에 캐릭터, 캐릭터 hover 시 약간 통통 튀게
@@ -19,7 +21,7 @@ background-color:gray;
 export function First () {
     return<>
     <Container>
-        <Img></Img>
+        <Img src={map}></Img>
     </Container>
     </>
 }

@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
+const Container = styled.div``
+const Calendar = styled.div``
+const Score = styled.div``
+
 export function Second () {
     return<>
-    <h1>두번째화면</h1>
+    <Container>
+        <Calendar></Calendar>
+        <Score></Score>
+    </Container>
     </>
 }

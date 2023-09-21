@@ -32,7 +32,7 @@ export function GameShop() {
           <Route path="/" element={<NavBar />}>
             <Route index element={<Home />} />
             <Route path="home" element={<Home />} />
-            <Route path="products" element={<ProductWrapper />}>
+            <Route path="products" element= {<ProductWrapper />}>
               <Route index element={<Products />} />
               <Route path=":id" element={<SingleProduct />} />
               {/*:id라는 건 이 자리에 무엇이든 올 수 있다 변수다*/}

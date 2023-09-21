@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
+const Container = styled.div``
+const LiveMovie = styled.div``
+const Linkicon = styled.div``
+
 export function Third () {
     return<>
-    <h1>세번째화면</h1>
+    <Container>
+        <LiveMovie>
+        </LiveMovie>
+        <Linkicon></Linkicon>
+    </Container>
     </>
 }
