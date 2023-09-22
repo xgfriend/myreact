@@ -1,7 +1,9 @@
 import styled from "styled-components"
 
 const Container = styled.div``
-
+const Characters = styled.div``
+const CharImg = styled.img``
+const CharName = styled.p``
 
 export function Fourth (){
     return<>

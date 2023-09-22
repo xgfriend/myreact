@@ -16,6 +16,10 @@ import { GameShop } from "./components/230918/Gameshop";
 import { UseContext } from "./components/230919/UseContext";
 import { Main } from "./components/project/Main";
 import { First } from "./components/project/First";
+import { MyMotion1 } from "./components/230922/MyMotion1";
+import { Gesture } from "./components/230922/Gesture";
+import { MyMotion2 } from "./components/230922/MyMotion2";
+import { Calendar } from "./components/project/Calendar";
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -35,14 +39,18 @@ font-family: poppins,GmarketSansMedium;
 function App() {
   return (
     <>
+    
     {/* <Main /> */}
-    <First/>
+    {/* <First/> */}
     {/* <NavBar/> */}
     {/* <UseContext /> */}
     {/* <GameShop /> */}
     {/* <MyRef/> */}
     {/* <OpenWeather cityName = "London"/> */}
     <GlobalStyle />
+    <Calendar/>
+    {/* <MyMotion2/> */}
+    {/* <MyMotion1/> */}
     {/* <Home /> */}
       {/* <PropsTest
       firstName="철수"
