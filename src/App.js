@@ -1,25 +1,6 @@
-import { Session } from "./components/230911/Session"
-import { List } from "./components/230911/list"
-import { Tab } from "./components/230911/Tab"
-import { Avatar } from "./components/230912/Avatar";
-import { AvatarList } from "./components/230912/AvatarList";
-import { PropsTest } from "./components/230912/PropsTest";
-import { CounterState } from "./components/230912/CounterState";
-import { Menu } from "./components/230913/Menu";
-import { Home } from "./components/230913/Home";
+import { GameShop } from "./components/GameShopFrontEnd/Gameshop";
 import { createGlobalStyle } from "styled-components";
-import { Gallery } from "./components/230914/Gallery";
-import { OpenWeather } from "./components/230914/OpenWeather";
-import { MyRef } from "./components/230915/MyRef";
-import { MyRouter } from "./components/230915/MyRouter";
-import { GameShop } from "./components/230918/Gameshop";
-import { UseContext } from "./components/230919/UseContext";
-import { Main } from "./components/project/Main";
-import { First } from "./components/project/First";
-import { MyMotion1 } from "./components/230922/MyMotion1";
-import { Gesture } from "./components/230922/Gesture";
-import { MyMotion2 } from "./components/230922/MyMotion2";
-import { Calendar } from "./components/project/Calendar";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -36,21 +17,18 @@ font-family: poppins,GmarketSansMedium;
 }
 `
 
+const client = new QueryClient();
+
 function App() {
   return (
     <>
-    
-    {/* <Main /> */}
-    {/* <First/> */}
-    {/* <NavBar/> */}
-    {/* <UseContext /> */}
-    {/* <GameShop /> */}
+    <QueryClientProvider client={client}>
+    <GameShop />
+    </QueryClientProvider>
+
     {/* <MyRef/> */}
     {/* <OpenWeather cityName = "London"/> */}
-    <GlobalStyle />
-    <Calendar/>
-    {/* <MyMotion2/> */}
-    {/* <MyMotion1/> */}
+    {/* <GlobalStyle /> */}
     {/* <Home /> */}
       {/* <PropsTest
       firstName="철수"
